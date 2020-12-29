@@ -1,0 +1,129 @@
+@import url(footer.css);
+
+/*Universal style*/
+body {
+  font-family: Georgia, serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+a {
+  text-decoration : none;
+  color: #b2cee0;
+}
+
+a:visited{
+  color: #6ea3c5;
+}
+
+a:hover {
+  color: #e5eff5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px 80px auto;
+  grid-template-areas:
+    "tt"
+    "nav"
+    "side"
+    "main"
+    "ft";
+}
+
+@media (min-width:600px) and (max-width:900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 180px 100px 100px auto;
+    grid-template-rows: 80px 80px auto;
+    grid-template-areas:
+      "tt tt tt tt tt "
+      "nav nav nav nav nav "
+      "side main main main main"
+      "ft ft ft ft ft ";
+  
+  }
+}
+
+@media (min-width:900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 240px 100px 150px auto;
+    grid-template-rows: 80px 80px auto;
+    grid-template-areas:
+      "tt tt tt tt tt "
+      "nav nav nav nav nav "
+      "side main main main main"
+      "ft ft ft ft ft ";
+    
+  }
+}
+
+/* Header */
+#title {
+  grid-area: tt;
+  display: block;
+  text-align: center;
+  background-color: #0f2b3d;
+  color: #fff;
+}
+
+#nav-bar {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #0f2b3d;
+  color: #fff;
+}
+
+.nav-item {
+  display: inline;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 5px 20px;
+}
+
+/* Side-menu */
+#side-menu {
+  grid-area: side;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 24px;
+  background-color: #6ea3c5;
+}
+
+.side-item {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 10px 5px;
+}
+
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px;
+  text-align: center;
+}
+
+.source {
+  font-size: 16px;
+  text-align: center;
+}
+
+.side-item a {
+  color: #0f2b3d;
+}
+
+.side-item a:visited {
+  color: #1d5174
+}
+
+.side-item a:hover {
+  color: #fff;
+}

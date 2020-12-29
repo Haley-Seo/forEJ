@@ -1,0 +1,66 @@
+@import url(styles.css);
+@import url(post-in.css);
+@import url(bio.css);
+@import url(footer.css);
+
+.blog-post {
+  grid-area: main;
+  display: grid;
+    grid-template-rows: 150px auto;
+    grid-template-areas:
+      "tt"
+      "post"
+      "author"
+      "share"
+      "related";
+  margin: auto auto;
+}
+
+#blog-title {
+  grid-area: tt;
+  height: auto;
+  margin: 15px;
+  padding: 10px;
+  padding-top: 0;
+  color: #fff;
+  background-color: #2a77aa;
+  text-align: center;
+}
+
+#blog-sharing {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+#related-posts-container {
+  grid-area: related;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  flex-wrap: wrap;
+  margin: auto auto;
+}
+
+.card {
+  display: inline-block;
+  width: 280px;
+  height: auto;
+  margin: 15px;
+  padding: 10px;
+  padding-top: 0;
+  color: #000;
+  background-color: #e5eff5;
+}
+
+.btn-card {
+  padding: 10px;
+  background-color: #b2cee0;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-card:hover {
+  background-color: #fff;
+}

@@ -1,0 +1,43 @@
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items : top;
+  width : 80%;
+  margin:auto;
+  background-color : #e5eff5;
+}
+
+@media (min-width:700px) {
+  .bio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items : top;
+    width : 80%;
+    margin:auto;
+    background-color : #e5eff5;
+  }
+}
+
+.author-left {
+  flex-grow:1;
+  margin : 15px;
+}
+.author-basic {
+  font-weight : bold;
+}
+
+.profile-img{
+  width : 200px;
+  height : 200px;
+  border-radius:10px;
+}
+.bio {
+  flex-grow:3;
+  font-style:italic;
+  margin : 15px;
+}
+
+

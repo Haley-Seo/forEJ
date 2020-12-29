@@ -1,0 +1,78 @@
+@import url(styles.css);
+
+
+/* Main blog cards */
+#blog-cards {
+  grid-area: main;
+  margin: auto auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  flex-wrap: wrap;
+  margin: auto auto;
+}
+
+.card {
+  width: 280px;
+  height: auto;
+  margin: 15px;
+  padding: 10px;
+  padding-top: 0;
+  color: #fff;
+  background-color: #000;
+}
+
+#post-1 {
+  background-image: url(../images/coyote_hill.jpeg);
+  background-size: cover;
+}
+
+#post-2 {
+  background-image: url(../images/redwood.jpg);
+  background-size: cover;
+}
+
+#post-3 {
+  background-image: url(../images/muirwood.jpg);
+  background-size: cover;
+}
+
+#post-4 {
+  background-image: url(../images/bean_hollow.jpg);
+  background-size: cover;
+}
+
+#post-5 {
+  background-image: url(../images/halfmoon_bay.jpg);
+  background-size: cover;
+}
+
+#post-6 {
+  background-image: url(../images/san_francisco.jpg);
+  background-size: cover;
+}
+
+#post-7 {
+  background-image: url(../images/hollywood.jpg);
+  background-size: cover;
+}
+
+.btn-card {
+  padding: 10px;
+  background-color: #b2cee0;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-card:hover {
+  background-color: #fff;
+}
+
+.blog-summary {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+}

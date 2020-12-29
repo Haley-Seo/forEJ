@@ -1,0 +1,27 @@
+#footer {
+  grid-area: ft;
+  display:flex;
+  flex-direction:column;
+  background-color: #0f2b3d;
+  color: #fff;
+  text-align : center;
+}
+
+#social {
+  font-size : 20px;
+  padding : 10px;
+}
+
+#rss {
+    font-size : 16px;
+    font-family : "Trebuchet MS", Helvetica, sans-serif;
+    padding : 10px;
+}
+
+#email {
+  padding : 10px;
+}
+
+#submit-email{
+  padding : 10px;
+}
